@@ -2,6 +2,7 @@ import React from 'react'
 import { Root, Routes } from 'react-static'
 import { Router } from '@reach/router'
 import Header from 'components/Header/Header'
+import Footer from 'components/Footer/Footer'
 import GlobalStyle from './global-styles/css-reset'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes path="*" />
         </Router>
       </React.Suspense>
+      <Footer />
     </Root>
   )
 }
