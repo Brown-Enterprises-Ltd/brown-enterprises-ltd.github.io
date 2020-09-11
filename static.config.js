@@ -12,5 +12,6 @@ export default {
     ],
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap'),
+    'react-static-plugin-styled-components'
   ],
 }

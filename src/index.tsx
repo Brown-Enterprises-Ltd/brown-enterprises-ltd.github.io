@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
+import './global-styles/css-reset.css';
 
 // Your top level component
 import App from './App'
