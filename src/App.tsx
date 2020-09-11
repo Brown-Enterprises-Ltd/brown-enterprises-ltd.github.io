@@ -7,6 +7,7 @@ import GlobalStyle from './global-styles/css-reset'
 function App() {
   return (
     <Root>
+      <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
       <GlobalStyle/>
       <Header />
       <React.Suspense fallback={<em>Loading...</em>}>
