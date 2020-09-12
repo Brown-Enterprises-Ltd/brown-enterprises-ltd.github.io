@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
+import { StyledSubtitle, StyledTitle } from 'components/Typography/Typography';
 
 const SplitJumbotronContainer = styled.div`
   display: flex;
@@ -24,24 +25,7 @@ interface IJumbotronTileProps {
   subtitle: string;
 }
 
-const StyledTitle = styled.h2<{colour: string}>`
-  margin-top: 10px;
-  font-family: Secular One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 44px;
-  color: ${props => props.colour};
-`;
 
-const StyledSubtitle = styled.span<{colour: string}>`
-  font-family: Secular One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 29px;
-  color: ${props => props.colour};
-`;
 
 const JumbotronTile = ({ colour, Icon, title, subtitle }: IJumbotronTileProps) => (
   <JumbotronTileContainer colour={colour} to="/">
