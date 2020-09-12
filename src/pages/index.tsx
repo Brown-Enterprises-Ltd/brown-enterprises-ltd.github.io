@@ -1,5 +1,6 @@
 import React from 'react'
+import SplitJumbotron from 'components/SplitJumbotron/SplitJumbotron';
 
 export default () => (
-  <h1>Hello world</h1>
+  <SplitJumbotron />
 )
