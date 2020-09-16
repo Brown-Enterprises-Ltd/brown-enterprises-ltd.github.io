@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button = styled(Link)`
   height: 75px;
-  background: #F6D744;
+  background: #f6d744;
   padding: 0px 40px;
   display: flex;
   align-items: center;

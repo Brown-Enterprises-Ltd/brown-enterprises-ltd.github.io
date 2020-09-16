@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledTitle = styled.h2<{colour: string}>`
+export const StyledTitle = styled.h2<{ colour: string }>`
   margin-top: 10px;
   font-family: Secular One;
   font-style: normal;
@@ -10,7 +10,7 @@ export const StyledTitle = styled.h2<{colour: string}>`
   color: ${props => props.colour};
 `;
 
-export const StyledSubtitle = styled.span<{colour: string}>`
+export const StyledSubtitle = styled.span<{ colour: string }>`
   font-family: Secular One;
   font-style: normal;
   font-weight: normal;

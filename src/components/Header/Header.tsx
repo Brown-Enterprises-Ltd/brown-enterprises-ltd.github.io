@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   height: 110px;
   width: 100%;
   background: #272932;
-  border-bottom: 4px #DD5F49 solid;
+  border-bottom: 4px #dd5f49 solid;
   align-items: center;
 `;
 
@@ -16,7 +16,7 @@ const HeaderCTA = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F2BD1D;
+  background: #f2bd1d;
   width: 240px;
   font-family: Secular One;
   text-decoration: none;
@@ -27,9 +27,9 @@ const HeaderCTA = styled(Link)`
 
 const HeaderButton = styled(Link)`
   display: flex;
-  background: #DD5F49;
+  background: #dd5f49;
   height: 40px;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   margin-right: 20px;
   justify-content: center;
@@ -40,11 +40,11 @@ const HeaderButton = styled(Link)`
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 29px;  
+  line-height: 29px;
 `;
 
 const Logo = styled(Link)`
-  color: #D8A47F;
+  color: #d8a47f;
   text-decoration: none;
   font-family: Secular One;
   font-size: 70px;

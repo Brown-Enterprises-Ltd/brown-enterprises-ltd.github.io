@@ -5,7 +5,7 @@ const FooterContainer = styled.footer`
   font-family: Secular One;
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   width: calc (100% - 60px);
   background: #272932;
   height: 124px;
@@ -22,7 +22,7 @@ const Footer = () => (
     <div>
       <p>&copy; Brown Enterprises Ltd.</p>
       <p>All Rights Reserved.</p>
-      <p>Registered in England and Wales:  #12663707</p>
+      <p>Registered in England and Wales: #12663707</p>
     </div>
   </FooterContainer>
 );
