@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledSubtitle, StyledTitle } from 'components/Typography/Typography';
-import Button from 'components/Button/Button';
+import { StyledSubtitle, StyledTitle } from '../Typography/Typography';
+import Button from '../Button/Button';
 
 const WorkTogetherJumbotronContainer = styled.div`
   display: flex;

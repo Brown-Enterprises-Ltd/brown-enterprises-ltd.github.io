@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledTitle } from 'components/Typography/Typography';
+import { StyledTitle } from '../Typography/Typography';
 
 const TestimonialJumbotronContainer = styled.div`
   display: flex;

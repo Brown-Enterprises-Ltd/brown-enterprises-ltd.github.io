@@ -17,4 +17,5 @@ export const StyledSubtitle = styled.span<{ colour: string }>`
   font-size: 20px;
   line-height: 29px;
   color: ${props => props.colour};
+  text-align: center;
 `;

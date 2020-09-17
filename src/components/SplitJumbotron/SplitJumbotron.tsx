@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
-import { StyledSubtitle, StyledTitle } from 'components/Typography/Typography';
+import { StyledSubtitle, StyledTitle } from '../Typography/Typography';
 
 const SplitJumbotronContainer = styled.div`
   display: flex;
