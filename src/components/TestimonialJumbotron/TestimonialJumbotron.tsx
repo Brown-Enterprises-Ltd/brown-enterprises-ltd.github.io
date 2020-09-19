@@ -1,4 +1,4 @@
-import QuoteAuthor from 'components/QuoteAuthor/QuoteAuthor';
+import QuoteAuthor from '../QuoteAuthor/QuoteAuthor';
 import React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from '../Typography/Typography';
