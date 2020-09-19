@@ -7,9 +7,10 @@ const WorkTogetherJumbotronContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  height: 385px;
+  height: 300px;
+  padding: 40px 0px;
   background: #fff;
 `;
 

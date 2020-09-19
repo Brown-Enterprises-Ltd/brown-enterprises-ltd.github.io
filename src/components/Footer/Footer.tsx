@@ -18,7 +18,7 @@ const FooterContainer = styled.footer`
 
 const Footer = () => (
   <FooterContainer>
-    <p>Built with ♥️in the United Kingdom</p>
+    <p>Built with ♥️ in the United Kingdom</p>
     <div>
       <p>&copy; Brown Enterprises Ltd.</p>
       <p>All Rights Reserved.</p>
