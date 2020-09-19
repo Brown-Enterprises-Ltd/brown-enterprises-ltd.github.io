@@ -61,7 +61,7 @@ const Header = () => (
   <HeaderContainer>
     <MainLinkContainer>
       <Logo to="/">B</Logo>
-      <HeaderButton to="/professional-services">Professional Services</HeaderButton>
+      <HeaderButton to="/services">Services</HeaderButton>
       <HeaderButton to="/showcase">Showcase</HeaderButton>
       <HeaderButton to="/clients">Clients</HeaderButton>
     </MainLinkContainer>
