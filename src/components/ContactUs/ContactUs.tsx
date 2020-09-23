@@ -11,7 +11,23 @@ const ContactUsContainer = styled.div`
 
 const InnerContainer = styled.div``;
 
-const StyledSubmit = styled.button``;
+const StyledSubmit = styled.button`
+  height: 75px;
+  background: #f6d744;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Secular One;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+  border: 0px;
+  font-size: 100%;
+`;
+
+const StyledForm = styled(Form)``;
 
 const EnquiryForm = () => (
   <Formik
@@ -42,12 +58,17 @@ const EnquiryForm = () => (
       }
     }}
   >
-    <Form>
+    <StyledForm>
+      <label htmlFor="name">Name</label>
       <Field type="text" name="name" />
+
+      <label htmlFor="emailAddress">Email Address</label>
       <Field type="text" name="emailAddress" />
+
+      <label htmlFor="emailAddress">How can we help you?</label>
       <Field component="textarea" name="message" />
       <StyledSubmit>Send Message</StyledSubmit>
-    </Form>
+    </StyledForm>
   </Formik>
 );
 
