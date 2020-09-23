@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Field, Form, Formik } from 'formik';
+import 'whatwg-fetch';
 
 const ContactUsContainer = styled.div`
   width: 100%;
@@ -19,7 +20,27 @@ const EnquiryForm = () => (
       emailAddress: '',
       message: '',
     }}
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={async (values, { resetForm }) => {
+      const formData = new FormData();
+      formData.set('name', values.name);
+      formData.set('emailAddress', values.emailAddress);
+      formData.set('message', values.message);
+
+      const response = await fetch('https://formspree.io/mbjpjqba', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: formData,
+      });
+
+      if (response.status === 200) {
+        resetForm();
+        alert("Thanks, we'll be in touch within 24 hours");
+      } else {
+        alert('Network error, please try again or call +447711815264');
+      }
+    }}
   >
     <Form>
       <Field type="text" name="name" />
