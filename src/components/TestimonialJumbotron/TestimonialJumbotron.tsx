@@ -7,7 +7,7 @@ const TestimonialJumbotronContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 360px;
   background: #064469;
   padding: 40px 0px;
 `;
@@ -27,7 +27,6 @@ const InnerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 300px;
   max-width: 670px;
 `;
 
@@ -36,8 +35,11 @@ const TestimonialJumbotron = () => (
     <InnerContainer>
       <StyledTitle colour="#FFF">What do our customers say?</StyledTitle>
       <StyledQuote>
-        &ldquo;Brown Enterprises built our tutor console on-time and on budget all whilst also
-        helping us improve our internal development processes&rdquo;
+        &ldquo;Brown Enterprises brought all of their experience with frontend engineering, UX, and
+        project planning to our team, which helped us to hone our requirements. They also ensured we
+        followed best practices technically right from the start. This has already paid off in the
+        ability we have to make changes and be flexible as requirements change, while keeping to our
+        quality standards&rdquo;
       </StyledQuote>
       <QuoteAuthor
         authorName="Sam Stagg"

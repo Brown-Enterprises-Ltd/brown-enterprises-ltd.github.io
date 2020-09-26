@@ -106,7 +106,7 @@ const SplitJumbotron = () => (
       colour="#DD5F49"
       Icon={PeopleIcon}
       title="Team Services"
-      subtitle="Hire, Onboard, Retain and Train top tech talent"
+      subtitle="Hire, Onboard &amp; Retain top tech talent"
     />
   </SplitJumbotronContainer>
 );

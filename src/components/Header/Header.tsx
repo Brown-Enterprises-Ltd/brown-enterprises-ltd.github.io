@@ -25,23 +25,23 @@ const HeaderCTA = styled(Link)`
   height: 100%;
 `;
 
-const HeaderButton = styled(Link)`
-  display: flex;
-  background: #dd5f49;
-  height: 40px;
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 30px;
-  border-radius: 20px;
-  font-family: Secular One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 29px;
-`;
+// const HeaderButton = styled(Link)`
+//   display: flex;
+//   background: #dd5f49;
+//   height: 40px;
+//   color: #fff;
+//   text-decoration: none;
+//   margin-right: 20px;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0px 30px;
+//   border-radius: 20px;
+//   font-family: Secular One;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 20px;
+//   line-height: 29px;
+// `;
 
 const Logo = styled(Link)`
   color: #d8a47f;
@@ -61,9 +61,9 @@ const Header = () => (
   <HeaderContainer>
     <MainLinkContainer>
       <Logo to="/">B</Logo>
-      <HeaderButton to="/services">Services</HeaderButton>
+      {/* <HeaderButton to="/services">Services</HeaderButton>
       <HeaderButton to="/showcase">Showcase</HeaderButton>
-      <HeaderButton to="/clients">Clients</HeaderButton>
+      <HeaderButton to="/clients">Clients</HeaderButton> */}
     </MainLinkContainer>
     <HeaderCTA to="/contact">Get in touch</HeaderCTA>
   </HeaderContainer>

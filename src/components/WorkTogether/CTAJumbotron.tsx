@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledSubtitle, StyledTitle } from '../Typography/Typography';
-import Button from '../Button/Button';
+import { LinkButton, AnchorButton } from '../Button/Button';
 
 const CTAJumbotronContainer = styled.div`
   display: flex;
@@ -29,11 +29,17 @@ const CTAJumbotron = ({ title, body, buttons }: ICTAJumbotronProps) => (
     <StyledTitle colour="#272932">{title}</StyledTitle>
     <StyledSubtitle colour="#272932">{body}</StyledSubtitle>
     <StyledButtonContainer>
-      {buttons.map((button, index) => (
-        <Button to={button.href} style={{ marginLeft: index % 2 ? '20px' : '0px' }}>
-          {button.label}
-        </Button>
-      ))}
+      {buttons.map((button, index) =>
+        button.href.startsWith('mailto:') || button.href.startsWith('tel:') ? (
+          <AnchorButton href={button.href} style={{ marginLeft: index % 2 ? '20px' : '0px' }}>
+            {button.label}
+          </AnchorButton>
+        ) : (
+          <LinkButton to={button.href} style={{ marginLeft: index % 2 ? '20px' : '0px' }}>
+            {button.label}
+          </LinkButton>
+        )
+      )}
     </StyledButtonContainer>
   </CTAJumbotronContainer>
 );

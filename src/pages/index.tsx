@@ -10,7 +10,7 @@ export default () => (
     <CTAJumbotron
       title="Lets work together"
       body="We work with great companies to build great products, teams and cultures"
-      buttons={[{ label: 'Get in touch', href: '/' }]}
+      buttons={[{ label: 'Get in touch', href: '/contact' }]}
     />
   </>
 );
